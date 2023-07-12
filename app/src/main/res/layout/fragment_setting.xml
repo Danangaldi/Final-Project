@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientberanda"
+    android:orientation="vertical"
+    tools:context="fragment.SettingFragment">
+
+    <fragment
+        android:id="@+id/mainContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/atas_pengaturan"
+        android:layout_width="394dp"
+        android:layout_height="68dp"
+        android:background="@drawable/atas1"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beranda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/atas_pengaturan"
+        app:layout_constraintEnd_toStartOf="@+id/back"
+        app:layout_constraintStart_toStartOf="@+id/atas_pengaturan"
+        app:layout_constraintTop_toTopOf="@+id/atas_pengaturan" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="198dp"
+        android:layout_height="69dp"
+        android:background="@drawable/shapeback"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/atas_pengaturan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="kalender"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/atas_pengaturan"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="45dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/cow"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/berat"
+        android:layout_width="366dp"
+        android:layout_height="545dp"
+        android:background="@drawable/shape_berat"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atas_pengaturan"
+        app:layout_constraintVertical_bias="0.518" />
+
+
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_setting"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/berat"
+        app:layout_constraintStart_toStartOf="@+id/berat"
+        app:layout_constraintTop_toBottomOf="@+id/profil" />
+
+
+    <ImageView
+        android:id="@+id/about_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/baseline_info_24"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/about"
+        app:layout_constraintStart_toStartOf="@+id/about"
+        app:layout_constraintTop_toTopOf="@+id/about" />
+
+    <ImageButton
+        android:id="@+id/profil"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_setting"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/berat"
+        app:layout_constraintStart_toStartOf="@+id/berat"
+        app:layout_constraintTop_toTopOf="@+id/berat" />
+
+    <ImageView
+        android:id="@+id/right_icon_profil"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/baseline_keyboard_arrow_right_24"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintEnd_toEndOf="@+id/profil"
+        app:layout_constraintTop_toTopOf="@+id/profil" />
+
+
+    <ImageView
+        android:id="@+id/right_icon_about"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/baseline_keyboard_arrow_right_24"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/about"
+        app:layout_constraintEnd_toEndOf="@+id/about"
+        app:layout_constraintTop_toTopOf="@+id/about" />
+
+    <TextView
+        android:id="@+id/profil_teks"
+        android:layout_width="44dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintStart_toEndOf="@+id/profil_icon"
+        app:layout_constraintTop_toTopOf="@+id/profil" />
+
+    <ImageView
+        android:id="@+id/profil_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/baseline_people_24"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintStart_toStartOf="@+id/profil"
+        app:layout_constraintTop_toTopOf="@+id/profil" />
+
+    <TextView
+        android:id="@+id/about_teks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/about"
+        app:layout_constraintStart_toEndOf="@+id/about_icon"
+        app:layout_constraintTop_toTopOf="@+id/about" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "12791052730",
+    "firebase_url": "https://ta-cmon-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ta-cmon",
+    "storage_bucket": "ta-cmon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12791052730:android:0ce6002ca789c6985b0583",
+        "android_client_info": {
+          "package_name": "com.example.cambeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12791052730-t45o0sia10hjs469ar92qgiecc4ec5iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiNGkqCC63B8oCFYS6CuQ44VtPJGVUgiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12791052730-t45o0sia10hjs469ar92qgiecc4ec5iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">C-Mon Apps Beta</string>
+    <string name="cmon">C-Mon Apps</string>
+    <string name="version">Version 1.0.0 Beta</string>
+    <string name="kategori">Pilihan Kategori Rumus</string>
+    <string name="buttonawal">GET STARTED</string>
+    <string name="schoorl">RUMUS SCHOORL</string>
+    <string name="lambourne">RUMUS LAMBOURNE</string>
+    <string name="winter">RUMUS WINTER</string>
+    <string name="cekbobot">Prediksi Bobot Sapi</string>
+    <string name="hasilfoto">HASIL FOTO</string>
+    <string name="ambilgambar">AMBIL GAMBAR!</string>
+    <string name="perhitungan">HASIL PERHITUNGAN</string>
+    <string name="jenissapi">JENIS SAPI</string>
+    <string name="panjangbadan">PANJANG BADAN</string>
+    <string name="lebardada">LEBAR DADA</string>
+    <string name="bobotsapi">BOBOT SAPI</string>
+    <string name="umursapi">UMUR SAPI</string>
+    <string name="beranda">BERANDA</string>
+    <string name="riwayat">RIWAYAT</string>
+    <string name="profile">PROFILE</string>
+    <string name="comingsoon">Coming Soon</string>
+    <string name="kalkulasi">KALKULASIKAN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

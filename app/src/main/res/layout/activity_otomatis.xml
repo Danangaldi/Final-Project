@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical"
+    tools:context=".Otomatis">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:background="@drawable/atas1"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beranda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Otomatis"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/atas"
+        app:layout_constraintEnd_toStartOf="@+id/back"
+        app:layout_constraintStart_toStartOf="@+id/atas"
+        app:layout_constraintTop_toTopOf="@+id/atas" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="218dp"
+        android:layout_height="97dp"
+        android:background="@drawable/shapeback"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/atas"
+        app:layout_constraintEnd_toEndOf="@+id/atas"
+        app:layout_constraintTop_toTopOf="@+id/atas" />
+
+    <ImageView
+        android:id="@+id/lingkansapi"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/circle"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/atas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lingkaranawal"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:background="@drawable/sapinya"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/lingkansapi"
+        app:layout_constraintEnd_toEndOf="@+id/lingkansapi"
+        app:layout_constraintStart_toStartOf="@+id/lingkansapi"
+        app:layout_constraintTop_toTopOf="@+id/lingkansapi" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Hola, User!"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/kalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="kalender"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/nama"
+        app:layout_constraintStart_toStartOf="@+id/nama"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+    <ImageView
+        android:id="@+id/history1"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_manual"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bobot" />
+
+    <ImageView
+        android:id="@+id/bukansapi"
+        android:layout_width="350dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/shape_manual"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/kalkulasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/gambarsapi2"
+        android:layout_width="195dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/sapi_jenis"
+        app:layout_constraintEnd_toEndOf="@+id/bukansapi" />
+
+    <ImageView
+        android:id="@+id/gambarsapi1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/jenis"
+        app:layout_constraintStart_toStartOf="@+id/bukansapi"
+        app:layout_constraintTop_toBottomOf="@+id/pixel" />
+
+    <ImageView
+        android:id="@+id/gambarsapi3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/gambarsapi"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/history1"
+        app:layout_constraintEnd_toEndOf="@+id/history1"
+        app:layout_constraintTop_toTopOf="@+id/history1" />
+
+    <ImageView
+        android:id="@+id/samping"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/baseline_east_24"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/gambarsapi1"
+        app:layout_constraintEnd_toStartOf="@+id/gambarsapi2"
+        app:layout_constraintStart_toEndOf="@+id/gambarsapi1"
+        app:layout_constraintTop_toTopOf="@+id/gambarsapi1" />
+
+    <ImageView
+        android:id="@+id/buttonpilih"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/shape_klik_lagi"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Data Hasil Perhitungan Bobot Sapi"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/history1"
+        app:layout_constraintTop_toBottomOf="@+id/atas" />
+
+    <TextView
+        android:id="@+id/sapiImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Gambar dan Jenis Sapi"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bukansapi"
+        app:layout_constraintStart_toStartOf="@+id/bukansapi" />
+
+    <TextView
+        android:id="@+id/ambilgambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Pilih Gambar"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonpilih"
+        app:layout_constraintEnd_toEndOf="@+id/buttonpilih"
+        app:layout_constraintStart_toStartOf="@+id/buttonpilih" />
+
+    <TextView
+        android:id="@+id/sapi_jenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/bukansapi"
+        app:layout_constraintEnd_toEndOf="@+id/gambarsapi"
+        app:layout_constraintStart_toStartOf="@+id/gambarsapi" />
+
+    <TextView
+        android:id="@+id/hasildata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/history1"
+        app:layout_constraintStart_toStartOf="@+id/history1"
+        app:layout_constraintTop_toTopOf="@+id/history1" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:background="@drawable/baseline_save_24"
+        app:layout_constraintBottom_toTopOf="@+id/teks3"
+        app:layout_constraintEnd_toEndOf="@+id/ImageSave"
+        app:layout_constraintStart_toStartOf="@+id/ImageSave"
+        app:layout_constraintTop_toTopOf="@+id/ImageSave" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_klik_lagi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonpilih"
+        app:layout_constraintStart_toStartOf="@+id/buttonpilih"
+        app:layout_constraintTop_toBottomOf="@+id/ambilgambar"
+        app:srcCompat="@drawable/baseline_camera_24" />
+
+    <ImageButton
+        android:id="@+id/ImageSave"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_klik"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Mulai Hitung"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/kalkulasi"
+        app:layout_constraintTop_toBottomOf="@+id/bukansapi" />
+
+    <Button
+        android:id="@+id/kalkulasi"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_klik"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Proses"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/ambilgambar"
+        app:layout_constraintEnd_toEndOf="@+id/ambilgambar"
+        app:layout_constraintStart_toStartOf="@+id/ambilgambar" />
+
+
+    <TextView
+        android:id="@+id/teks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Simpan"
+        android:textColor="@color/black"
+        android:textSize="6sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageSave"
+        app:layout_constraintEnd_toEndOf="@+id/save"
+        app:layout_constraintStart_toStartOf="@+id/save" />
+
+    <EditText
+        android:id="@+id/jenissapi"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Masukkan nama jenis sapi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/bukansapi"
+        app:layout_constraintStart_toStartOf="@+id/bukansapi"
+        app:layout_constraintTop_toTopOf="@+id/sapi_jenis" />
+
+    <TextView
+        android:id="@+id/bb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="BB Lambourne :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/history1"
+        app:layout_constraintTop_toBottomOf="@+id/bbaja" />
+
+    <TextView
+        android:id="@+id/bb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="BB Winter :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/bb1"
+        app:layout_constraintTop_toBottomOf="@+id/bb1" />
+
+    <TextView
+        android:id="@+id/bb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="BB Schoorl :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/bb2"
+        app:layout_constraintTop_toBottomOf="@+id/bb2" />
+
+    <TextView
+        android:id="@+id/pbaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="PB :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/history1"
+        app:layout_constraintTop_toTopOf="@+id/history1" />
+
+    <TextView
+        android:id="@+id/bbaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="LD :"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/pbaja"
+        app:layout_constraintTop_toBottomOf="@+id/pbaja" />
+
+    <TextView
+        android:id="@+id/pixel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="nilai pixel:"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/bukansapi"
+        app:layout_constraintTop_toTopOf="@+id/bukansapi" />
+
+    <TextView
+        android:id="@+id/pixelwarna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text=":"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/gambarsapi2"
+        app:layout_constraintStart_toStartOf="@+id/gambarsapi2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

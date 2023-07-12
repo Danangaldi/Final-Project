@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="horizontal"
+    tools:context=".Manual">
+
+    <com.example.cambeta.CustomImageView
+        android:id="@+id/myImageView"
+        android:layout_width="610dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/gambarsapi"
+        android:layout_width="84dp"
+        android:layout_height="53dp"
+        android:background="@drawable/sapi1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/data"
+        app:layout_constraintEnd_toEndOf="@+id/data"
+        app:layout_constraintStart_toStartOf="@+id/data" />
+
+    <ImageView
+        android:id="@+id/garis"
+        android:layout_width="55dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/shape_klik_lagi"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/data"
+        android:layout_width="130dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/shape_history"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_klik_lagi"
+        app:layout_constraintBottom_toBottomOf="@+id/garis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/garis"
+        app:layout_constraintTop_toTopOf="@+id/garis"
+        app:srcCompat="@drawable/baseline_camera_24" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:rotation="-90"
+        android:text="Pilih gambar"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/LD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="LD"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        app:layout_constraintStart_toStartOf="@+id/data"
+        app:layout_constraintTop_toTopOf="@+id/data" />
+
+    <TextView
+        android:id="@+id/PB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="PB"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        app:layout_constraintStart_toStartOf="@+id/LD"
+        app:layout_constraintTop_toBottomOf="@+id/LD" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="BB"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        app:layout_constraintStart_toStartOf="@+id/PB"
+        app:layout_constraintTop_toBottomOf="@+id/PB" />
+
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Input Nama Sapi"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="@+id/jenis"
+        app:layout_constraintTop_toBottomOf="@+id/gambarsapi" />
+
+    <EditText
+        android:id="@+id/jenis"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:hint=". . ."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        android:textColorHint="@color/black"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/data"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/shape_klik_lagi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/data" />
+
+
+    <ImageButton
+        android:id="@+id/simpan"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/shape_klik"
+        app:layout_constraintBottom_toBottomOf="@+id/data"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Hitung"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Simpan"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/simpan"
+        app:layout_constraintEnd_toEndOf="@+id/simpan"
+        app:layout_constraintStart_toStartOf="@+id/simpan"
+        app:layout_constraintTop_toTopOf="@+id/simpan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="pixel"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/garis"
+        app:layout_constraintEnd_toEndOf="@+id/data"
+        app:layout_constraintStart_toStartOf="@+id/data" />
+
+    <ImageButton
+        android:id="@+id/buttonLD"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_klik"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonPB"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_klik_lagi"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLD" />
+
+    <TextView
+        android:id="@+id/LDTombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="LD"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLD"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLD"
+        app:layout_constraintStart_toStartOf="@+id/buttonLD"
+        app:layout_constraintTop_toTopOf="@+id/buttonLD" />
+
+    <TextView
+        android:id="@+id/PBTombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="PB"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPB"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPB"
+        app:layout_constraintStart_toStartOf="@+id/buttonPB"
+        app:layout_constraintTop_toTopOf="@+id/buttonPB" />
+
+    <TextView
+        android:id="@+id/tekssaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Pilih LD atau PB\njika nilai pixels sudah diketahui"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLD"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/teksLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="          LD\n(Lingkar Dada)"
+        android:textColor="@color/white"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toTopOf="@+id/gambarsapi"
+        app:layout_constraintStart_toStartOf="@+id/data" />
+
+    <TextView
+        android:id="@+id/teksPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="             PB\n(Panjang Badan)"
+        android:textColor="@color/white"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toTopOf="@+id/gambarsapi"
+        app:layout_constraintStart_toEndOf="@+id/teksLD" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
